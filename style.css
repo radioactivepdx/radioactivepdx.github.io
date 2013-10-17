@@ -1,14 +1,13 @@
 div.background
   {
-  width:500px;
-  height:250px;
-  background:url(klematis.jpg) repeat;
-  border:2px solid black;
+  width:738px;
+  height:710px;
+  background:url(danger-sign.png);
   }
 div.transbox
   {
-  width:400px;
-  height:180px;
+  width:738px;
+  height:710px;
   margin:30px 50px;
   background-color:#ffffff;
   border:1px solid black;
