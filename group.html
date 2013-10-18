@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Radioactive Portland</title>
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#header").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <div id="wrapper"/>
-    <div id="container"/>
-
-    <div>
-      <a href="index.html"><img src="radioactivepdx-256x205.png" alt="Radioactive Portland"/></a>
-    </div>
+    <div id="header"></div>
 
     <div>
       <p>
@@ -35,7 +38,6 @@
       </script>
     </div>
 
-    </div>
-    </div>
+    <div id="footer.html"/>
   </body>
 </html>
