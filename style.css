@@ -1,21 +1,7 @@
-div.background
-  {
-  width:738px;
-  height:710px;
-  margin:30px 50px;
-  background:url(danger-sign.png);
-  }
-div.transbox
-  {
-  width:738px;
-  height:710px;
-  background-color:#ffffff;
-  opacity:0.9;
-  filter:alpha(opacity=90); /* For IE8 and earlier */
-  }
-div.transbox p
-  {
-  margin:30px 40px;
-  font-weight:bold;
-  color:#000000;
-  }
+div.wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 940px;
+}
