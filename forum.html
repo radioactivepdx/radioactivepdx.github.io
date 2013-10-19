@@ -1,43 +1,20 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Radioactive Portland</title>
-  </head>
-  <body>
-    <div>
+---
+---
+{% include header.html %}
 
-      <div id="nav">
-        <a href="/">
-          <img src="radioactivepdx-256x205.png" alt="Radioactive Portland"/>
-        </a>
-        <div id="nav-vertical-center">
-          <p>
-            A support group for people living in a radioactive world.
-          </p>
-        </div>
-      </div>
+  <div>
+    <iframe id="google-groups-iframe"
+      src="javascript:void(0)"
+      scrolling="no"
+      frameborder="0"
+      height="700">
+    </iframe>
+    <script type="text/javascript">
+      document.getElementById('google-groups-iframe').src =
+         'https://groups.google.com/forum/embed/?place=forum/radioactivepdx'
+         + '&showsearch=true&showpopout=true&showtabs=false'
+         + '&parenturl=' + encodeURIComponent(window.location.href);
+    </script>
+  </div>
 
-      <div>
-
-        <div>
-          <iframe id="google-groups-iframe"
-            src="javascript:void(0)"
-            scrolling="no"
-            frameborder="0"
-            height="700">
-          </iframe>
-          <script type="text/javascript">
-            document.getElementById('google-groups-iframe').src =
-               'https://groups.google.com/forum/embed/?place=forum/radioactivepdx'
-               + '&showsearch=true&showpopout=true&showtabs=false'
-               + '&parenturl=' + encodeURIComponent(window.location.href);
-          </script>
-        </div>
-
-      </div>
-    </div>
-  </body>
-</html>
-
+{% include footer.html %}
