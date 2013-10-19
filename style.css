@@ -1,3 +1,14 @@
+p
+  {
+  margin-right: 40px;
+  margin-left: 40px;
+  }
+
+a:visited 
+  {
+  color: #666;
+  }
+
 body 
   {
   text-align: center;
@@ -48,8 +59,3 @@ div#container
   border: 5px solid black;
   }
 
-p
-  {
-  margin-right: 40px;
-  margin-left: 40px;
-  }
