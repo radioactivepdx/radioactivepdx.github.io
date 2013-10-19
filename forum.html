@@ -20,18 +20,17 @@
         </div>
       </div>
 
-      <div id="container">
+      <div>
 
-        <div>
-          <iframe id="forum_embed"
+        <div id="wrap">
+          <iframe id="iframe"
             src="javascript:void(0)"
             scrolling="no"
             frameborder="0"
-            width="900"
             height="700">
           </iframe>
           <script type="text/javascript">
-            document.getElementById('forum_embed').src =
+            document.getElementById('iframe').src =
                'https://groups.google.com/forum/embed/?place=forum/radioactivepdx'
                + '&showsearch=true&showpopout=true&showtabs=false'
                + '&parenturl=' + encodeURIComponent(window.location.href);

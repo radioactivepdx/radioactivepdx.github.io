@@ -5,20 +5,17 @@ p
   margin-right: 40px;
   }
 
-ul li
+ul
   {
   margin-left: 40px;
   margin-right: 40px;
   }
 
-a:visited 
-  {
-  color: #666;
-  }
+a:visited { color: #666; }
 
 body 
   {
-  text-align: center;
+  test-aline: left;
   margin: 0;
   padding: 0;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -27,18 +24,7 @@ body
   background: #ffffff;
   }
 
-.news
-  {
-  font-size: 16px;
-  }
-
-div#wrapper 
-  {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  }
+.news { font-size: 16px; }
 
 div#nav
   {
@@ -60,13 +46,5 @@ div#nav
   margin-top: -156px 
   }
 
-div#container 
-  {
-  width: auto;
-  text-align: left;
-  display: block;
-  border: 5px solid black;
-  margin-right: 40px;
-  margin-right: auto;
-  margin-left: auto;
-  }
+#wrap { position:fixed; left:0; width:100%; top:205; height:100%}
+#iframe { display: block; width:100%; height:100%; }
