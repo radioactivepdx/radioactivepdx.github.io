@@ -46,7 +46,7 @@ div#nav
   margin-top: -156px 
   }
 
-div#main { height: 700px; }
+div#main { xheight: 700px; }
 
 #wrap { position:fixed; left:0; width:100%; top:205; height:100%; }
 #iframe { display: block; width:100%; height:100%; vertical-align: top; }
