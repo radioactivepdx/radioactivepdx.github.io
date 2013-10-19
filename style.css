@@ -33,15 +33,13 @@ div#nav
 #nav-vertical-center 
   { 
   color: #FCE829;
-  margin-right: 25px;
-  margin-left: 290px;
+  margin-left: 261px;
   position: absolute; 
-  margin-top: -125px 
+  margin-top: -156px 
   }
 
 div#container 
   {
-  padding: 5px;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -50,3 +48,8 @@ div#container
   border: 5px solid black;
   }
 
+p
+  {
+  margin-right: 40px;
+  margin-left: 40px;
+  }
