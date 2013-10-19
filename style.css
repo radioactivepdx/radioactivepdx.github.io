@@ -46,4 +46,9 @@ div#nav
   margin-top: -156px 
   }
 
-#google-groups-iframe { width: 100%; }
+#google-groups-iframe 
+  {
+  margin-left: 40px;
+  margin-right: 40px; 
+  width: 100%; 
+  }
