@@ -1,19 +1,45 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Radioactive Portland</title>
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+
+    <script src="/js/jquery.js"></script>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <style>
+      .navbar .nav {
+        margin-top: 132px;
+      }
+      body {
+        padding-top: 187px;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
+
   <body>
 
-    <div id="nav">
-      <a href="/">
-        <img src="/radioactivepdx-256x205.png" alt="Radioactive Portland"/>
-      </a>
-      <div id="nav-vertical-center">
-        <p>
-          A support group for people living in a radioactive world.
-        </p>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#"><img src="/img/radioactivepdx-192x154.png" alt="{{site.name}}"/></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/forum/">Forum</a></li>
+              <li><a href="/about/">About</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="container">

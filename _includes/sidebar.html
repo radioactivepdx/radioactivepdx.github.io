@@ -1,0 +1,18 @@
+<h3>About</h3>
+
+<p>
+  Portland is contaminated with nuclear radiation, and it's getting worse.
+</p>
+<p>
+  What are we going to do about it?
+<p>
+  To answer that question, and to take action, we created <b>Radioactive Portland</b>.
+</p>
+<a href="/about/">Read more</a>
+
+<h3>Recent Posts</h3>
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

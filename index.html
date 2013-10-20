@@ -1,38 +1,54 @@
 ---
+layout: default
 ---
-{% include header.html %}
 
-  <p>
-    Portland is contaminated with nuclear radiation, and it's getting worse.
-  </p>
-  <p>
-    What are we going to do about it?
-  <p>
-    To answer that question, and to take action, we created <b>Radioactive Portland</b>.
-  </p>
-  <p>
-    <a href="forum">Click here</a> to join the discussion.
-  </p>
-  <p>
-    <b>News Update</b> 10/18/2013 21:30<br>
-    <div class="news">
+<h2>Call for Participation</h2>
+This new group needs your help to get off the ground.
+<a href="forum">Click here</a> to join the discussion.
+<hr>
+{% for post in paginator.posts %}
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>{{ post.title }}</h2>
+      <h4>{{ post.date | date_to_long_string }}</h4>
       <p>
-        We just launched a few hours ago, so things are messy.
-        This fledgling website just hosts the discussion group right now, but there's more
-        to come. 
-      </p>
-      <p>
-        We'll be adding sections to match <b>Radioactive Portland</b>'s three drivers:
-        <ul>
-          <li><b>Monitoring</b> - Test results for background, rainwater, soil, food, milk</li>
-          <li><b>Knowledge</b> - Articles and videos on radiation, detection, ecology, health</li>
-          <li><b>Action</b> - Political, legal and commercial actions; calendar of events; trip reports</li>
-        </ul>
-      </p>
-      <p>
-        Our first order of business is to figure out when and where to meet up.
+        <a href="{{ post.url }}">Read Post</a>
       </p>
     </div>
-  </p>
+  </div>
+{% endfor %}
 
-{% include footer.html %}
+<div class="row-fluid">
+  <div class="span12">
+    <div class="pagination">
+      <ul>
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+          <li><a href="/">Prev</a></li>
+          {% else %}
+          <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
+          {% endif %}
+        {% else %}
+        <li><span class="disabled">Prev</span></li>
+        {% endif %}
+        {% if paginator.page == 1 %}
+        <li><span class="active">1</span></li>
+        {% else %}
+        <li><a href="/">1</a></li>
+        {% endif %}
+        {% for count in (2..paginator.total_pages) %}
+          {% if count == paginator.page %}
+          <li><span class="active">{{ count }}</span></li>
+          {% else %}
+          <li><a href="/page{{ count }}">{{ count }}</a></li>
+          {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+        <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+        {% else %}
+        <li><span class="disabled">Next</span></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div>
+  <iframe id="google-groups-iframe"
+    src="javascript:void(0)"
+    scrolling="no"
+    frameborder="0"
+    width="620px"
+    height="700px">
+  </iframe>
+  <script type="text/javascript">
+    document.getElementById('google-groups-iframe').src =
+       'https://groups.google.com/forum/embed/?place=forum/radioactivepdx'
+       + '&showsearch=true&showpopout=true&showtabs=false'
+       + '&parenturl=' + encodeURIComponent(window.location.href);
+  </script>
+</div>
